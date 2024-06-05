@@ -1,6 +1,7 @@
 export const ADD_SERVICE = 'ADD_SERVICE';
 export const UPDATE_SERVICE = 'UPDATE_SERVICE';
 export const REMOVE_SERVICE = 'REMOVE_SERVICE';
+export const SET_FILTER = 'SET_FILTER';
 export const CHANGE_SERVICE_FIELD = 'CHANGE_SERVICE_FIELD';
 export const SET_FORM_VALUES = 'SET_FORM_VALUES';
 export const CLEAR_FORM = 'CLEAR_FORM';
@@ -44,4 +45,11 @@ export const removeService = (id) => {
     type: REMOVE_SERVICE,
     payload: id,
   };
-}
+};
+
+export const setFilter = (search) => {
+  return {
+    type: SET_FILTER,
+    payload: search,
+  };
+};
